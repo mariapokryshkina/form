@@ -1,1 +1,1 @@
-![ScreenShot](https://{Screenshot.png})
+![ScreenShot](Screenshot.png)
