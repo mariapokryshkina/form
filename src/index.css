@@ -47,7 +47,6 @@ button:hover {
 /***************** FORM COMPONENT *********************/
 form {
   padding: 2rem;
-  background: rgb(133, 192, 241);
   color: rgb(53, 93, 121);
   width: 70%;
 }
@@ -73,6 +72,7 @@ select {
 /***************** VIEW COMPONENT *********************/
 .view {
   padding: 2rem;
+  width: 100%;
 }
 
 .notepad {
@@ -136,4 +136,12 @@ select {
 
 .popup h1 {
   color: green;
+}
+
+.form_area {
+  display: flex;
+  background: rgb(133, 192, 241);
+}
+.notes {
+  margin: 4rem;
 }

@@ -1,0 +1,30 @@
+{
+  "notes": [
+    { 
+        "firstname": "Maria",
+        "lastname": "Pokryshkina",
+        "phonenumber": "123456",
+        "role": "student",
+        "message":"hello",
+        "id": "1"
+    },
+
+    { 
+        "firstname": "Sofia",
+        "lastname": "Smith",
+        "phonenumber": "0587262748",
+        "role": "student",
+        "message":"hola",
+        "id": "2"
+    },
+
+    { 
+        "firstname": "Margit",
+        "lastname": "Tennosaar",
+        "phonenumber": "868030292",
+        "role": "techer",
+        "message":"great to see you",
+        "id": "3"
+    }
+  ]
+}
