@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Form from "./Form";
+import Header from "./Header";
+import Footer from "./Footer";
 import View from "./View";
 import Popup from "./Popup";
 import Notes from "./Notes";
@@ -50,16 +52,20 @@ class App extends Component {
   render() {
   return (
       <div>
+        <Header />
         <div className="form_area">
           <Form change={this.inputHandler} submit={this.popupHandler} />
           <View {...this.state.inputData} />
+          <div className="notes">
+        {this.state.data.map((note) => (
+          <Notes {...note} key={note.id} />
+        ))}
+        </div>
         </div>
         {this.state.showPopup && (
         <Popup {...this.state.inputData}  post={this.postHandler} />
   )}
-        {this.state.data.map((note) => (
-          <Notes {...note} key={note.id} />
-        ))}
+        <Footer />
       </div>
     );
   }

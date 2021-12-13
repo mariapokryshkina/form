@@ -52,7 +52,7 @@ const Form = ({submit, change}) => {
           onChange={change}
         ></textarea>
       </div>
-      <input type="submit" value="Send" />
+      <input className="button"type="submit" value="Send" />
     </form>
   );
 };

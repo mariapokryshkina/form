@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -6,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,22 +35,58 @@ button {
 }
 
 input[type="submit"]:hover,
+.secondary:hover,
 button:hover {
-  background-color: rgb(45, 60, 19);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .secondary {
-  border: darkolivegreen;
-  color: darkolivegreen;
+  border: darkgray;
+  color: rgb(255, 255, 255);
   background: transparent;
+  margin-bottom: 25px;
+}
+
+.form_area {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+header,
+footer {
+  height: 8vh;
+  width: 100vw;
+  background-color: #0a0b0b;
+  display: flex;
+  align-items: center;
+}
+header {
+  justify-content: left;
+  padding-left: 2vw;
+}
+footer {
+  justify-content: center;
+}
+header p {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+footer p {
+  color: whitesmoke;
 }
 
 /***************** FORM COMPONENT *********************/
 form {
-  padding: 2rem;
-  color: rgb(53, 93, 121);
-  width: 70%;
+  color: rgb(0, 0, 0);
+  height: 400px;
 }
+
 label {
   width: 150px;
   display: inline-block;
@@ -62,44 +99,48 @@ textarea,
 select {
   font-family: "Roboto" sans-serif;
   background: #f4f4f4;
-  border: 1px solid rgb(102, 102, 102);
+  border: 1px solid black;
   width: 250px;
   padding: 0.8rem;
   border-radius: 5px;
   font-size: 0.9rem;
 }
+.button {
+  margin-top: 5px;
+}
 
 /***************** VIEW COMPONENT *********************/
 .view {
-  padding: 2rem;
-  width: 100%;
+  width: 400px;
 }
 
 .notepad {
-  background: #78923b;
-  color: rgb(53, 93, 121);
-  margin: 1rem 0;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   position: relative;
-  width: 50%;
-  box-shadow: 0 0 5px rgb(121, 121, 121);
+  width: 400px;
+  height: 370px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
-.notepad::before {
+/* .notepad::before {
   content: "";
   width: 2px;
   height: 100%;
   position: absolute;
   left: 35px;
-}
+} */
 
 .notepad p {
-  padding: 1rem;
-  border-bottom: 5px double rgb(146, 172, 243);
-  text-indent: 50px;
+  text-indent: 10px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin: 15px;
 }
 
 .notepad span {
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Amatic SC", cursive;
   font-size: 1.5rem;
   margin-left: 15px;
 }
@@ -122,26 +163,39 @@ select {
   position: relative;
   top: 0;
   left: 0;
-  height: 50%;
+  height: 55%;
   width: 50%;
-  background-color: rgb(123, 178, 211);
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
-  box-shadow: 0 0 5px rgb(55, 80, 92);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
   margin: 0 auto;
+  border-radius: 5px;
 }
 .popup p {
   padding: 1rem 0;
-  color: rgb(55, 80, 92);
+  color: rgb(0, 0, 0);
+}
+.popup button {
+  background-color: darkgray;
+  margin-right: 10px;
 }
 
-.popup h1 {
-  color: green;
+.popup button:hover {
+  background-color: black;
+  color: white;
 }
 
-.form_area {
-  display: flex;
-  background: rgb(133, 192, 241);
+.secondary .popup h1 {
+  color: rgb(0, 0, 0);
 }
+
 .notes {
-  margin: 4rem;
+  width: 400px;
+  height: 370px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+.note {
+  margin: 30px;
 }
